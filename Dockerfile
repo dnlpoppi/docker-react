@@ -4,7 +4,7 @@ FROM node:alpine as builder
 
 WORKDIR '/app'
 
-COPY package.json .
+COPY package*.json ./
 
 #ENV http_proxy="http://stlwbsproxy.corp.amdocs.com:8080"
 #ENV https_proxy="http://stlwbsproxy.corp.amdocs.com:8080"
